@@ -14,10 +14,17 @@
         >Tell Me
         </button>
       </div>
+      <div class="btn-group mr-2" role="group" aria-label="Edit post">
+        <button
+          class="btn btn-primary"
+          (click) = "deletePost(post)"
+        >Edit
+        </button>
+      </div>
       <div class="btn-group" role="group" aria-label="Delete post">
         <button
           class="btn btn-primary"
-          (click) = "deletePost()"
+          (click) = "deletePost(post)"
         >Delete
         </button>
       </div>

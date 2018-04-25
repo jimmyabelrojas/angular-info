@@ -7,9 +7,11 @@ import { Post } from '../../model/post.model';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent implements OnInit {
-
+  post: Post;
   @Output() doPostCreate = new EventEmitter<Post>();
-  constructor() { }
+  constructor() {
+    // this.post = new Post('','');
+  }
 
   ngOnInit() {
   }
